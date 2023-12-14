@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Krona;
+    src: url(../fonts/KronaOne-Regular.ttf);
+}
+
+.container {
+    background-color: #111417;
+    position: relative;
+    /* height: 100vh;
+    width: 100%; */
+    overflow: auto;
+}
+
+
+
+
+
+.container .section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.about{
+    height: 100vh;
+    width: 95%;
+    overflow: auto;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .intro{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.about .image{
+
+    margin: 20px;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    mix-blend-mode:lighten;
+}
+
+.nav {
+    top: 20px;
+    width: 100%;
+    position: relative;
+    padding-left: 20px;
+    text-align: center;
+    font-family: Krona;
+    color: grey;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+
+.nav:hover {
+    color: #fff;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 40px #0ff,
+        0 0 80px #0ff,
+        0 0 90px #0ff,
+        0 0 100px #0ff,
+        0 0 150px #0ff;
+}
+
+
+
+
+h2 {
+    color: white;
+    font-family: Krona;
+    font-size: 2em;
+  }
+
+  .hybrid {
+  position: absolute;
+  width: auto;
+  float:left;
+}
+
+span {
+  color: white;
+}
+
+.hybrid span::after {
+  align-self: center;
+  content: "|";
+  transition: 0.05s;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+
+.footer {
+  font-family: Rubik Mono One;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 2em;
+  gap: 10px;
+  display: flex;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  background-color: #111417;
+}
+
+div.right {
+  margin: 0;
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  gap: 10px;
+  flex: 1;
+}
+
+div.left {
+  flex-basis: 100%;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  width: 50%;
+  flex-direction: column;
+  flex: 1;
+}
+
+textarea {
+  font-family: Azeret Mono;
+  box-sizing: border-box;
+  color: whitesmoke;
+  outline: none;
+  resize: none;
+  border: none;
+  padding: 1em;
+  border-radius: 10px;
+  background-color:#111417;
+}
+
+.msg {
+  flex-basis: 100%;
+}
+
+div.bottom {
+  min-width: 0;
+  overflow-x: scroll;
+  padding-top: 1em;
+  gap: 2em;
+  color: grey;
+  width: 100%;
+  flex-basis: 100%;
+  display: flex;
+}
+
+.ftrtxt {
+  flex-basis: 100%;
+  font-size: 15px;
+  text-align: center;
+  font-family: Rubik Mono One;
+  color: grey;
+}
+
+.ftrhead {
+  font-size: 35px;
+}
+
+.ftrhead::after,
+.ftrtxt::after {
+  content: "\a";
+  white-space: pre;
+}
+
+.ftrlinks {
+  flex-basis: 1;
+}
+
+hr {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  flex-basis: 100%;
+  color: white;
+}
+
+svg {
+  fill: white;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+svg:hover {
+  transform: scale(1.1);
+  fill: grey;
+}
+
+::placeholder {
+  font-family: Azeret Mono;
+}
+
+#start {
+  margin-left: auto;
+}
+
+#end {
+  margin-right: auto;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+  height: 5px;
+  width: 2px;
+}
+
+#submitbtn {
+  display: none;
+  border-radius: 10px;
+  border: none;
+  font-family: Rubik Mono One;
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+#submitbtn:hover {
+  background-color: #111417;
+  color: white;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    height: 0%;
+    border-radius: 10px;
+  }
+  100% {
+    opacity: 1;
+    height: 100%;
+    border-radius: 10px;
+  }
+}

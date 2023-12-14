@@ -1,0 +1,85 @@
+ html {
+     scroll-behavior: smooth;
+ }
+
+ @font-face {
+     font-family: Krona;
+     src: url(../fonts/KronaOne-Regular.ttf);
+ }
+
+ .nav {
+     top: 4px;
+     position: relative;
+     padding-left: 12px;
+     font-family: Krona;
+     color: grey;
+     font-size: 30px;
+     text-decoration: none;
+ }
+
+ .nav:hover {
+     color: #fff;
+     text-shadow:
+         0 0 5px #fff,
+         0 0 10px #fff,
+         0 0 20px #fff,
+         0 0 40px #0ff,
+         0 0 80px #0ff,
+         0 0 90px #0ff,
+         0 0 100px #0ff,
+         0 0 150px #0ff;
+ }
+
+ body {
+     perspective: 600px;
+     overflow-x: hidden;
+     background-color: #1A1E26;
+ }
+
+
+
+ div {
+     position: sticky;
+     top: 0px;
+     display: -webkit-flex;
+     display: -moz-flex;
+     display: -ms-flex;
+     display: -o-flex;
+     display: flex;
+     justify-content: center;
+     height: 100vh;
+     align-items: center;
+ }
+
+ div img {
+     height: 600px;
+     box-shadow: 2px 9px 20px rgba(0, 0, 0, 0.8);
+ }
+
+ div:nth-child(1) img {
+     transform: rotate(10deg);
+ }
+
+ div:nth-child(2) img {
+     transform: rotate(-10deg);
+ }
+
+ div:nth-child(3) img {
+     transform: rotate(8deg);
+ }
+
+ div:nth-child(4) img {
+     transform: rotate(0deg);
+ }
+
+ div:nth-child(5) img {
+     transform: rotate(-12deg);
+ }
+
+ div:nth-child(6) img {
+     transform: rotate(11deg);
+ }
+
+ div:nth-child(7) img {
+     transform: rotate(0deg);
+ }
